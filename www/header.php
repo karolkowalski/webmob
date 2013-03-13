@@ -11,17 +11,18 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="./img/logo-72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="./img/logo-114.png">
 		<link rel="apple-touch-startup-image" href="./img/splash-touch.png">
+		<script type="text/javascript" src="./jss/library.js"></script>
 	</head>
 	<body>
-		<div class="wrapper">
+		<header>
 			<a id="header" href="/index.php">
 				<img class="logo" src="./img/logo-72.png"/>
-				<div class="titre">
+				<hgroup>
 					<h1>MyBD.fr</h1>
 					<h2>pleins d'infos sur les BDs</h2>
-				</div>
+				</hgroup>
 			</a>
-		</div>
+		</header>
 		<br class="clear"/>
 
 		<div class="wrapper">
@@ -36,5 +37,5 @@
 		</div>
 		<br class="clear"/>
 
-		<div class="wrapper">
-			<div class="content">
+		<section>
+			<article>

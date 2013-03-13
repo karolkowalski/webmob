@@ -13,7 +13,11 @@ Résumé   : Rajouter des fonctionnalités videos et geolocalisation sur nos pag
 
 2. Changement des styles génériques
   * mettre le logo en rotation de 30 degrés
+    CML: http://www.w3schools.com/css3/css3_2dtransforms.asp
+    
   * mettre un ombré sur les textes de menu
+    CML: http://www.w3schools.com/css3/css3_text_effects.asp
+    
   * lors du survol d'un lien de menu, mettre le texte en rotation, et augmenter le décalage du shadow
   * Définir une animation (monanim) qui fait des variation de couleur de texte (ex http://www.w3schools.com/css3/css3_animations.asp)
   * utiliser cette animation sur le titre h1 de notre entete
