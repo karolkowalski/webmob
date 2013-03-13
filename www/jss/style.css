@@ -1,0 +1,129 @@
+body {
+	font-family: Arial;
+	font-size: 1.2em;
+	color: #333;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	background: #AAA url('../img/bg-maison.png')
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.wrapper {
+	width: 100%;
+	display: block;
+	position: static;
+}
+
+#header *, #menu *, #footer * {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#header img.logo {
+	float: left;
+	margin-right: 10px;
+}
+
+#header .titre {
+	float: left;
+}
+
+#header h1 {
+	color: #205605;
+}
+
+#header h2 {
+	color: #3BA009;
+	margin-top: 10px;
+}
+
+#menu {
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#menu ul {
+	width: 100%;
+	display: block;
+	list-style-type: none;
+}
+
+#menu li {
+	display: block;
+	width: 25%;
+	float: left;
+	background-color: #205605;
+}
+
+#menu li a {
+	color: white;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%
+}
+
+#menu li:hover {
+	background-color: #3BA009;
+}
+
+.content {
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#footer {
+	font-size: 11px;
+	display: block;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#footer ul {
+	list-style-type: none;
+}
+
+#footer li {
+	display: block;
+	float: left;
+	background-color: RGBA(255,255,255,0);
+}
+
+#footer li a {
+	color: darkGrey;
+	padding: 0 10px;
+}
+
+#footer li:hover {
+	background-color: RGBA(255,255,255,0);
+}
+
+#footer li:hover a {
+	color: #236005;
+}
+
+p {
+	background: white;
+	border: 1px solid black;
+	width: 100%;
+}
+
+

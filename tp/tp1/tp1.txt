@@ -7,11 +7,17 @@ Résumé   : faire une application dur les Bandes dessinnées avec DB coté serv
   * Créer un nouveau fichier php web page, nommée index.php
   * Mettre la structure de base d'un document html5 (<html>, <head> <title>, <body>)
   * Rajouter les <meta> HandheldFriendly a true, MobileOptimized a 320 et viewport a "width=device-width, initial-scale=1.0" (<meta name="xxx" content="yyy">)
+  	CML: http://davidbcalhoun.com/tag/handheldfriendly
+
   * Ajouter une feuille de style nommée style.css dans  le répertoire jss/
   * Lier cette feuille de style dans la page d'accueil (<link rel="stylesheet" href=...>)
   * Utiliser dans le html le fichier img/favicon.ico (<link rel="shortcut icon" href=...>)
   * Utiliser dans le html les balises <link> pour les logo sur iOS (link apple-touch-icon avec 3 size différentes) fichiers images logo-xx.png
+    CML: http://www.alsacreations.com/astuce/lire/1080-apple-touch-icon-iphone-ipad-ipod-icone.html
+
   * Utiliser dans le html les balises <link> pour le boot iOS (apple-touch-startup-image). fichier image splash-touch.png
+    CML: http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+
   * Créer la zone d'entete de notre page. Pour cela
     * créer une <div> .wrapper. Rajouter après une balise <br> avec la classe clear
     * créer un lien <a> avec l'id #header dans le wrapper. Ce lien pointe vers index.php (retour accueil)
