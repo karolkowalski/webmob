@@ -16,6 +16,10 @@
 		<link rel="apple-touch-startup-image" href="../img/splash-touch.png">
 		
 		<script type="text/javascript" src="../jss/library.js"></script>
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>	</head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="http://jquery-ui-map.googlecode.com/svn/trunk/ui/jquery.ui.map.js"></script>
+		
+	</head>
 	<body>

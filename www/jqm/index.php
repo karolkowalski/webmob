@@ -114,6 +114,7 @@
 		<div data-role="content">
     		Random information<br/>
 			<div id="location"></div>
+			<div id="geoMap" class="map rounded mapJqm"></div>
 			<button onclick="updateLocation()">Update Location</button>
 			<script>
 				$.ready(function() {
@@ -121,20 +122,31 @@
 				});
 
 				function updateLocation() {
-					var innerHtml = "";
-					var geoLocation = geo.get();
-					if (geoLocation != null) {
-						innerHtml += "Voici votre position:<br/>";
-						innerHtml += " - Longitude: " + geoLocation.coords.longitude + "<br/>";
-						innerHtml += " - Latitude: " + geoLocation.coords.latitude + "<br/>";
-						innerHtml += " - Altitude: " + geoLocation.coords.altitude + "<br/>";
-					} else {
-						var geoError = library.get(geo.LS_ERROR_KEY);
-						if (geoError != null) {
-							innerHtml += geoError + "<br/>";
+					geo.update(function() {
+						var innerHtml = "";
+						var geoLocation = geo.get();
+						if (geoLocation != null) {
+							innerHtml += "Voici votre position:<br/>";
+							innerHtml += " - Longitude: " + geoLocation.coords.longitude + "<br/>";
+							innerHtml += " - Latitude: " + geoLocation.coords.latitude + "<br/>";
+							innerHtml += " - Altitude: " + geoLocation.coords.altitude + "<br/>";
+							innerHtml += " - Timestamp: " + geoLocation.timestamp + "<br/>";
+							var myLocation = geoLocation.coords.latitude + ',' + geoLocation.coords.longitude;
+							$('#geoMap').gmap({'center': myLocation}).bind('init', function(ev, map) {
+								$('#geoMap').gmap('addMarker', {'position': myLocation}).click(function() {
+									$('#geoMap').gmap('openInfoWindow', {'content': 'Here you are Karol ! Approximately of course ;-)'}, this);
+								});
+							});
+							$('#geoMap').gmap('option', 'zoom', 13);
+								
+						} else {
+							var geoError = library.get(geo.LS_ERROR_KEY);
+							if (geoError != null) {
+								innerHtml += geoError + "<br/>";
+							}
 						}
-					}
-					document.getElementById('location').innerHTML=innerHtml;
+						document.getElementById('location').innerHTML=innerHtml;
+					});
 				}
 			</script>
 		</div>

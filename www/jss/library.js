@@ -48,6 +48,7 @@ library.fireEvent = function(element, eventName) {
 var geo = new Object();
 geo.LS_LOCATION_KEY = "geoLocation";
 geo.LS_ERROR_KEY = "geoError";
+geo.callbackFunction = null;
 
 
 geo.isGeoSupported = function() {
@@ -64,8 +65,9 @@ geo.init = function() {
 	}
 	return this;
 }
-geo.update = function() {
+geo.update = function(callbackFunction) {
 	if (geo.isGeoSupported()) {
+		geo.callbackFunction = callbackFunction;
 		navigator.geolocation.getCurrentPosition(geo._set, geo._onError);
 	}
 	return this;
@@ -85,6 +87,9 @@ geo.get = function() {
 geo._set = function(position) {
 	library.set(geo.LS_LOCATION_KEY, JSON.stringify(position));
 	library.reset(geo.LS_ERROR_KEY);
+	if (geo.callbackFunction != null) {
+		geo.callbackFunction();
+	}
 }
 geo._onError = function(error) {
 	library.reset(geo.LS_LOCATION_KEY);
