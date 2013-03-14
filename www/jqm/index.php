@@ -37,10 +37,14 @@
 						<label for="disponibilite">Disponibilité: </label><input type="checkbox" id="disponibilite" name="disponibilite" onDblClick="removeThisFieldsLocalStorage(this)"/>
 					</div>
 				</fieldset>
-				<a href="#" data-role="button" onclick="formSubmitted()" data-mini="true" data-inline="true" data-icon="search">Search</a>
-				<a href="#" data-role="button" onclick="loadForm()" data-mini="true" data-inline="true" data-icon="edit">Load LS</a>
-				<a href="#" data-role="button" onclick="library.clear()" data-mini="true" data-inline="true" data-icon="delete">Clear LS</a>
-				<a href="#" data-role="button" data-theme="e" onclick="reInit()" data-mini="true" data-inline="true" data-icon="alert">Cancel</a>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#" data-theme="b" data-role="button" onclick="loadForm()" data-icon="edit">Load LS</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="#" data-theme="e" data-role="button" onclick="library.clear()" data-icon="delete">Clear LS</a>
+					</div>
+				</div>
 				<script>
 					function formSubmitted() {
 						if (library.isStorageSupported()) {
@@ -81,7 +85,14 @@
 				</script>
 			</form>
 		</div>
-		<div data-role="footer" data-position="fixed"><h6>Footer</h6></div>
+		<div class="ui-bar" data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-theme="b" onclick="formSubmitted()" data-mini="true" data-inline="true" data-icon="search">Search</a></li>
+					<li><a href="#" onclick="reInit()" data-mini="true" data-inline="true" data-icon="alert">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 				
     <div id="last" data-role="page" data-add-back-btn="true">
