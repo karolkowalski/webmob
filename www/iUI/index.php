@@ -79,7 +79,13 @@
 		</form>
 		
 		<div id="last" title="Last" class="panel">
-			Last information
+			Last information:<br/>
+			<video width="320" height="180" controls>
+				<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+				<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+				<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
 		</div>
 				
 		<div id="random" title="Random" class="panel">
