@@ -1,0 +1,58 @@
+{
+    "name": "MyBD",
+    "settings": {},
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 894,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000499,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "85ccdd50-acae-4411-9b7d-02328232ae3a": {
+            "paths": [
+                "metadata/view/Home",
+                "app/view/override/Home.js",
+                "app/view/Home.js"
+            ],
+            "className": "Home"
+        },
+        "0fa654d2-7413-42dd-b4c0-7f3dc9d3c365": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "05d1e604-004b-487d-85d6-f21e35c38974": {
+            "paths": [
+                "metadata/store/MyJsonStore",
+                "app/store/override/MyJsonStore.js",
+                "app/store/MyJsonStore.js"
+            ],
+            "className": "MyJsonStore"
+        },
+        "5e8fbcd7-2cf2-428c-99de-b03c9ecb26e1": {
+            "paths": [
+                "metadata/view/Users",
+                "app/view/override/Users.js",
+                "app/view/Users.js"
+            ],
+            "className": "Users"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "85ccdd50-acae-4411-9b7d-02328232ae3a",
+            "5e8fbcd7-2cf2-428c-99de-b03c9ecb26e1"
+        ],
+        "store": [
+            "05d1e604-004b-487d-85d6-f21e35c38974"
+        ],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "0fa654d2-7413-42dd-b4c0-7f3dc9d3c365"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

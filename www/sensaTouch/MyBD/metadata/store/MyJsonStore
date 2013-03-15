@@ -1,0 +1,68 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": "[\r\n    {login:'marfilc', nom:'Marfil'},\r\n    {login:'cecp', nom:'Cécilia'},\r\n    {login:'laruec', nom:'Larue'}\r\n]",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "MyJsonStore"
+    },
+    "designerId": "05d1e604-004b-487d-85d6-f21e35c38974",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy"
+            },
+            "designerId": "d0dd51c2-6366-41a4-b5c0-9b8ab3b08b47",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "4dc8b8fc-a75e-4ea6-8dd7-5b70d0bc0830"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "login",
+                "designer|userClassName": "field"
+            },
+            "designerId": "da05707f-4689-4fe3-977e-d1a535aa4543"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nom",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "ed84a292-d268-487c-ad8d-a4c2dab94c1b"
+        }
+    ]
+}

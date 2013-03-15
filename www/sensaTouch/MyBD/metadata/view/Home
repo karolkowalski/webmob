@@ -1,0 +1,139 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Home"
+    },
+    "designerId": "85ccdd50-acae-4411-9b7d-02328232ae3a",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|userClassName": "MyTitleBar",
+                "title": "Bienvenue"
+            },
+            "designerId": "b38fa64b-ef9e-4f7a-9d80-a99b12611933"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "<h1>Search</h1>",
+                "styleHtmlContent": true,
+                "designer|userClassName": "MyContainer"
+            },
+            "designerId": "4101dd16-cf35-4c45-81a9-79bd5ad97b96"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "0a7f5511-76dd-43f5-88a0-a41f0d3d972f",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "top",
+                        "iconCls": "time",
+                        "iconMask": true,
+                        "text": "Agenda"
+                    },
+                    "designerId": "76f005c2-262d-4a07-811e-f6f2a6004bcb",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "console.log(button);\r",
+                                    "button.setIconCls('info');\r",
+                                    "button.getIcon().bodyElement.dom.style.backgroundPosition = '-1px -1px';\r",
+                                    "console.log(event);"
+                                ]
+                            },
+                            "designerId": "4844c5c6-6fea-4f6f-859e-f9cbea553ba6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "top",
+                        "iconCls": "settings",
+                        "iconMask": true,
+                        "text": "Settings"
+                    },
+                    "designerId": "470b7e1c-8f75-4c55-bdb4-36d891b0ccfe",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    ""
+                                ]
+                            },
+                            "designerId": "c2fc14e6-5043-4cab-b318-48f1ccece6cd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

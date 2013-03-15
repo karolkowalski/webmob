@@ -1,0 +1,138 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Users",
+        "designer|initialView": true,
+        "store": "MyJsonStore"
+    },
+    "designerId": "5e8fbcd7-2cf2-428c-99de-b03c9ecb26e1",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "designer|userClassName": "MyTitleBar",
+                "title": "Utilisateurs"
+            },
+            "designerId": "7db88aed-1efa-4708-b742-eb361e0a6ffa"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyToolbar"
+            },
+            "designerId": "6d3b1fea-a067-4249-bb78-8a8a2ad6ef68",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "top",
+                        "iconCls": "time",
+                        "iconMask": true,
+                        "text": "Agenda"
+                    },
+                    "designerId": "ad4b898f-a93e-4146-902b-67875ce08d6a",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "console.log(button);\r",
+                                    "button.setIconCls('info');\r",
+                                    "button.getIcon().bodyElement.dom.style.backgroundPosition = '-1px -1px';\r",
+                                    "console.log(event);"
+                                ]
+                            },
+                            "designerId": "a042d050-1717-4083-9de1-659eb3f96990"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "top",
+                        "iconCls": "settings",
+                        "iconMask": true,
+                        "text": "Settings"
+                    },
+                    "designerId": "7159e4c0-ed88-4462-9149-fbb0a8a22904"
+                }
+            ]
+        },
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "itemTpl",
+                "implHandler": [
+                    "<div>{nom}, ({login})</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "cb33d55f-45a7-4168-817c-67676ab736fa"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onListItemTap",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "console.log(record);"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "28c22113-4f4d-485d-ba1b-bf6b004dad57"
+        }
+    ]
+}
